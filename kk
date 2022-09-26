@@ -1,1 +1,0 @@
-./kali-nethunter-kernel

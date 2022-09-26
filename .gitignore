@@ -122,3 +122,4 @@ android/configs/android-*.cfg
 /scripts/rkp_cfp/tmp/
 /security/defex_lsm/defex_packed_rules.inc
 /security/defex_lsm/pack_rules
+*.pyc
