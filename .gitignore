@@ -118,6 +118,7 @@ all.config
 android/configs/android-*.cfg
 
 # misc build files
+/def_config
 /arch/arm64/boot/dts/exynos/*.dtb
 /scripts/rkp_cfp/tmp/
 /security/defex_lsm/defex_packed_rules.inc
