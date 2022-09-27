@@ -1,6 +1,3 @@
-# cleanup first
-./clean.sh
-
 # set constants 
 export KDIR=$PWD
 export CROSS_COMPILE=$KDIR/toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-
@@ -10,4 +7,4 @@ export SUBARCH=arm64
 
 # build
 make ARCH=arm64 exynos8895-greatlte_defconfig
-make ARCH=arm64 -j24
+make ARCH=arm64 SUBDIRS="/home/fabrizio/Source/dev/kernel-modules/sampler/" modules
