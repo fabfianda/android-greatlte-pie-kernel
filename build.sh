@@ -9,5 +9,8 @@ export ARCH=arm64
 export SUBARCH=arm64
 
 # build
+echo "Compiling..."
 make ARCH=arm64 exynos8895-greatlte_defconfig
-make ARCH=arm64 -j24
+make VERBOSE=1 ARCH=arm64 -j24 > log_std.txt 2> log_err.txt
+echo "Done"
+tail log_std.txt
