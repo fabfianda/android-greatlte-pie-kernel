@@ -11,10 +11,7 @@
 # Copyright (C) 1995-2001 by Russell King
 
 # Remove error from drivers/misc/modem_v1/modem_utils.c (stop_net_ifaces)
-KBUILD_CFLAGS += $(call cc-option,-Wno-error=logical-not-parentheses,)
-KBUILD_CFLAGS += $(call cc-option,-Wno-error=switch-bool,)
 
-#
 ifeq ($(CONFIG_RELOCATABLE_KERNEL), y)
 LDFLAGS_vmlinux	:=-p --no-undefined -X -pie -Bsymbolic
 else
