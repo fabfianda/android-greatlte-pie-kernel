@@ -125,3 +125,4 @@ log_*.txt
 /security/defex_lsm/defex_packed_rules.inc
 /security/defex_lsm/pack_rules
 *.pyc
+/source
